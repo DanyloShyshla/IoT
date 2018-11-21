@@ -5,35 +5,45 @@
 using namespace std;
 
 WaterPump::WaterPump() {
-    this-> Name = "Name";
+    this->name = "Name";
 }
-WaterPump::WaterPump(int PowerConsumptions,string Brand,int WaterCapacity,string Name,string Type,int amount,int LengthOfCable,int Public_first,string Public_second) {
-    this->Name = Name;
-    this->Type = Type;
+
+WaterPump::WaterPump(int powerConsumptions, string Brand, int waterCapacity, string Name, string Type, int amount,
+                     int LengthOfCable, int public_first, string public_second) {
+    this->name = Name;
+    this->type = Type;
     this->amount = amount;
-    this->LengthOfCable = LengthOfCable;
-    this->Brand = Brand;
-    this->WaterCapacity = WaterCapacity;
-    this->PowerConsumptions = PowerConsumptions;
-    this->Public_first = Public_first;
-    this->Public_second = Public_second;
+    this->lengthOfCable = LengthOfCable;
+    this->brand = Brand;
+    this->waterCapacity = waterCapacity;
+    this->powerConsumptions = powerConsumptions;
+    this->public_first = public_first;
+    this->public_second = public_second;
 }
+
 WaterPump::~WaterPump() {
     std::cout << "This is destructor" << endl;
 }
-void WaterPump::GetClass() {
 
-    std::cout << "Name: " << Name <<"\n" << "Type: " << Type <<"\n" << "Amount: " << amount <<"\n" << "LengthOfCable: " << LengthOfCable <<"\n" << "Brand: " << Brand <<"\n"<< "WaterCapacity: " << WaterCapacity <<"\n"<< "PowerConsumptions: " << PowerConsumptions <<"\n"<< "Public_first: " << Public_first <<"\n"<< "Public_second: " << Public_second <<"\n"<<  std::endl;
+void WaterPump::getClass() {
+
+    std::cout << "Name: " << name << "\n" << "Type: " << type << "\n" << "Amount: " << amount << "\n"
+              << "LengthOfCable: " << lengthOfCable << "\n" << "Brand: " << brand << "\n" << "waterCapacity: "
+              << waterCapacity << "\n" << "powerConsumptions: " << powerConsumptions << "\n" << "public_first: "
+              << public_first << "\n" << "public_second: " << public_second << "\n" << std::endl;
 }
-int WaterPump::GetPowerConsumptions() {
 
-    return this->PowerConsumptions;
+int WaterPump::getPowerConsumptions() {
+
+    return this->powerConsumptions;
 }
-string WaterPump::GetBrand()  {
 
-    return this->Brand;
+string WaterPump::getBrand() {
+
+    return this->brand;
 }
-int WaterPump::GetWaterCapacity()  {
 
-    return this->WaterCapacity;
+int WaterPump::getWaterCapacity() {
+
+    return this->waterCapacity;
 }
