@@ -2,27 +2,35 @@
 
 using namespace std;
 
-class WaterPump{
+class WaterPump {
 
 public:
-    int Public_first;
-    string Public_second;
-    int PowerConsumptions;
-    string Brand;
-    int WaterCapacity;
-    void GetClass();
-    int GetPowerConsumptions();
-    string GetBrand();
-    int GetWaterCapacity();
+    int public_first;
+    string public_second;
+    int powerConsumptions;
+    string brand;
+    int waterCapacity;
+
+    void getClass();
+
+    int getPowerConsumptions();
+
+    string getBrand();
+
+    int getWaterCapacity();
+
     WaterPump();
-    WaterPump(int PowerConsumptions,string Brand,int WaterCapacity,string Name,string Type,int amount,int LengthOfCable,int Public_first,string Public_second);
+
+    WaterPump(int powerConsumptions, string brand, int waterCapacity, string name, string type, int amount,
+              int lengthOfCable, int public_first, string public_second);
+
     ~WaterPump();
 
 private:
-    string Name;
-    string Type;
+    string name;
+    string type;
 protected:
     int amount;
-    int LengthOfCable;
+    int lengthOfCable;
 
 };
